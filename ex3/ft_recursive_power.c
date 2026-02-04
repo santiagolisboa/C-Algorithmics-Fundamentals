@@ -6,7 +6,7 @@
 /*   By: slisboa <slisboa@learner.42.tech>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/03 11:14:28 by slisboa           #+#    #+#             */
-/*   Updated: 2026/02/03 16:10:18 by slisboa          ###   ########.fr       */
+/*   Updated: 2026/02/04 08:39:28 by slisboa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_recursive_power(int nb, int power)
 {
-	if (nb < 0)
+	if (power < 0)
 		return (0);
 	if (power == 0)
 		return (1);
@@ -26,7 +26,7 @@ int	ft_recursive_power(int nb, int power)
 int	main(void)
 {
 	int	res;
-	res = ft_recursive_power(5, 5);
+	res = ft_recursive_power(1, -1);
 	printf("%d", res);
 	putchar('\n');
 	return(0);
